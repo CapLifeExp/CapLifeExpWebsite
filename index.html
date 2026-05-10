@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CapLife Experience</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <div class="nav">
+    <div class="nav-inner">
+      <button onclick="scrollToTop()">home</button>
+      <button onclick="scrollToSection('services')">services</button>
+      <button onclick="scrollToSection('gallery')">gallery</button>
+      <button onclick="scrollToSection('book')">book</button>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="https://cdn.coverr.co/videos/coverr-luxury-event-setup-8572/1080p.mp4" />
+    </video>
+
+    <div class="hero-content" id="heroContent">
+      <img src="https://i.ibb.co/Kxgn41yG/Cap-Life-of.png" class="logo" />
+      <h1>Luxury Event Experiences That Feel Cinematic</h1>
+      <p>Premium 360 booths, cinematic lighting, and real-time capture systems.</p>
+
+      <div class="btn-row">
+        <button class="btn primary" onclick="scrollToSection('book')">Book Experience</button>
+        <button class="btn ghost" onclick="scrollToSection('gallery')">View Work</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <h2>Services</h2>
+    <p class="sub">
+      Premium event experiences engineered to impress. Every detail designed for luxury.
+    </p>
+
+    <div class="grid">
+      <div class="card"><h3>360 Booth Experience</h3><p>Cinematic slow-motion capture with instant sharing.</p></div>
+      <div class="card"><h3>Luxury Photo Booth</h3><p>Studio-quality photos with premium lighting.</p></div>
+      <div class="card"><h3>Custom Branding</h3><p>Personalized overlays and themes.</p></div>
+      <div class="card"><h3>On-Site Attendants</h3><p>Professional staff for flawless execution.</p></div>
+      <div class="card"><h3>Instant Sharing</h3><p>Text, email, QR delivery instantly.</p></div>
+      <div class="card"><h3>Event Customization</h3><p>Tailored to your event’s aesthetic.</p></div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section">
+    <h2>Captured Moments</h2>
+
+    <div class="grid">
+      <div class="gallery-box"></div>
+      <div class="gallery-box"></div>
+      <div class="gallery-box"></div>
+      <div class="gallery-box"></div>
+      <div class="gallery-box"></div>
+      <div class="gallery-box"></div>
+      <div class="gallery-box"></div>
+      <div class="gallery-box"></div>
+      <div class="gallery-box"></div>
+    </div>
+  </section>
+
+  <!-- BOOK -->
+  <section id="book" class="section small">
+    <h2>Reserve</h2>
+
+    <div class="card form">
+      <input id="name" placeholder="Name" />
+      <input id="email" placeholder="Email" />
+      <input id="date" type="date" />
+
+      <button class="btn primary full">Pay Deposit</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
